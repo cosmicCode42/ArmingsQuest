@@ -1,74 +1,16 @@
 # Armings Quest
 
-Milestone Project for the Introduction to Web Development course offered by Code Institute. A site giving information about a party of adventurers hailing from, or affiliated with, the village of Armings in the Neverwinter Woods.
+Started as the Milestone Project for the Introduction to Web Development course offered by Code Institute. A site giving information about a party of adventurers hailing from, or affiliated with, the village of Armings in the Neverwinter Woods.
 
 ## Table of Contents
-1. [UX](#ux)
-	- [Project Goals](#project-goals)
-	- [User Stories](#user-stories)
-	- [Design Choices](#design-choices)
-2. [Planning](#planning)
-3. [Future Additions](#future-additions)
-4. [Testing](#testing)
-	- [Bugfixes](#bugfixes)
-5. [Deployment](#deployment)
-6. [Credit](#credit)
+1. [Future Additions](#future-additions)
+2. [Bugfixes](#bugfixes)
+3. [Deployment](#deployment)
+4. [Credit](#credit)
 
 **Technologies Used:** HTML5, CSS3; Bootstrap 4.6.0.
 
-## UX
-
-### Project Goals
-The primary goals of the site are to provide information about the characters in the party in a pleasing and easy-to-understand manner. Intended audience: myself and my friends, as well as other people that might be interested in following our group's adventures.
-
-#### User Goals
-
-User goals are:
-- An easy to navigate site.
-- Informative character pages.
-- Diverse media to supplement character information.
-
-### User Stories
-As a user of this site, I want:
-- A site and interface that is intuitive, convenient and easy to navigate.
-- Information that is easy to find and understand, and laid out in a pleasing manner.
-- Additional media (such as character portraits) to give me a better idea of the characters.
-
-### Design Choices
-
-#### **Interface**
-
-I went with a simple navbar at the top and clickable character icons that lead to the character pages; the icons light up slightly when the mouse hovers over them (using ``:hover`` and ``opacity`` in CSS). 
-
-![Icons without hover.](assets/images/readme/main_char_icons.png)
-
-![Icons with a hover over Subao.](assets/images/readme/main_char_icon_bao_lightup.png)
-
-The navbar also remains fixed to the top of the screen, reducing scrolling required to return home or go to another character page. While this is subjective, I believe the contrast in colours I have chosen looks good, and the information is all clearly laid out.
-
-#### **Colours**
-
-The background colour (``rgba(255, 235, 205, 0.6)``) and black text for the main body was chosen for its simplicity and resemblance to yellowed paper or parchment. The header and footer use firebrick red (``#b22222``) as a background colour and off-white (``#fafafa``) text, for a pleasing contrast.
-
-![Bell's character page.](assets/images/readme/bell_page.png)
-
-#### **Images**
-
-I made use of character images to give a clear idea of each character's appearance...
-
-![The main page!](assets/images/readme/main_page.png)
-
-... as well as progress bars to show the character's comparative strengths in several areas (known as 'stats'). 
-
-![Here we see Subao's stats.](assets/images/readme/subao_stat_bars.png)
-
-The hero image, icons, and each of the character images are taken from a commissioned art piece made of the characters in question.
-
 ## Planning
-
-### Wireframes
-
-I did not create picture wireframes for this project; however, below is my written plan for the site as I was coding it.
 
 #### **Will need the following:**
 - An index page with a hero image - the four heroes of Armings: Bell, Subao, Corlan Falster, and Sun Mullnir.
@@ -92,38 +34,7 @@ I did not create picture wireframes for this project; however, below is my writt
 - Friends of the Fellowship pages!
 	- Details of the assorted allies of the party.
 
-## Testing
-
-The site has been tested extensively to ensure the best user experience across multiple screen sizes.
-
-- [W3C CSS Validation](https://jigsaw.w3.org/css-validator/#validate_by_input)
-- [W3C Markup Validation](https://validator.w3.org/#validate_by_input)
-
-The developer used **W3C CSS Validation Service** and **W3C Markup Validation Service** to check the validity of the website code.
-
-### Testing Process
-
-In order to make sure the site renders acceptably across several screen sizes, I made liberal use of the DevTools offered by Google Chrome (or in my case, the Opera GX browser that closely mimics Chrome) as well as testing load times of each page, mobile and desktop, with the Lighthouse Chrome extension.
-
-![Testing main page desktop version.](assets/images/readme/lighthouse_test_main_desktop.png)
-
-![Testing main page mobile version.](assets/images/readme/lighthouse_test_main_mobile.png)
-
-### User Stories Testing
-
-As a user of the site, I want: 
-- A site and interface that is intuitive, convenient and easy to navigate.
-	- Test that all links lead to the proper places (character icons link to correct character pages, as do navbar links).
-	- Test that the character icons lighten when the mouse hovers over them.
-	- Ensure that the fixed-top navbar isn't clipping down into the main sections in its default position.
-- Information that is easy to find and understand, and laid out in a pleasing manner.
-	- Ensure that the images and text look acceptable and are spaced well on variable screen sizes.
-	- Ensure that all content is centred in easily identifiable sections.
-- Additional media (such as character portraits) to give me a better idea of the characters.
-	- Test that character images are positioned well on variables screen sizes.
-	- Test that stat bars are positioned well on variable screen sizes.
-
-### Bugfixes
+## Bugfixes
 - **Problem:** The character icons looked slightly lopsided on the index page.
 	- **Solution:** I added percentage padding to the left of each icon to make them more central and adjusted the padding on smaller screens with a CSS @media rule to keep them oriented for that layout.
 - **Problem:** Character icons on the chracter pages were pushed too far to the left on smaller screen sizes.
