@@ -164,11 +164,13 @@ footer {
 
 .bio-space {
     padding: 2rem;
+    margin-bottom: 1rem;
 }
 
 .bio-header,
-.bio-info {
-    padding: 2rem;
+.bio-info,
+.bio-stat-info {
+    padding: 2rem 2rem 1rem 2rem;
 }
 
 /* Stat Bars */
@@ -194,7 +196,11 @@ footer {
 }
 
 .bio-stats {
-    margin: 40px 20px;
+    margin: 30px 20px;
+}
+
+.bio-stats-alt {
+    margin: 10px 10px;
 }
 
 .progress .text-dark {
