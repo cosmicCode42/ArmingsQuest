@@ -226,6 +226,7 @@ footer {
 }
 
 @media screen and (max-height: 768px) and (min-height: 768px) and (orientation: landscape) {
+
     /* Specifically for the iPad Mini landscape orientation */
     .hero-image {
         height: 70vh;
@@ -306,7 +307,8 @@ footer {
         background-size: contain;
     }
 
-    .bio-space {
+    .bio-space,
+    .history-space {
         padding: 1rem;
     }
 

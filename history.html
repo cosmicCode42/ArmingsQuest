@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Sun's character page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Sun</title>
+</head>
+
+<body>
+    <header class="container-fluid fixed-top">
+
+        <!-- Navbar here!-->
+        <!-- Navbar copied from Bootstrap documentation and edited to fit my needs. https://getbootstrap.com/docs/4.6/components/navbar/ -->
+        <div class="row">
+            <div class="col nav-index">
+                <nav class="navbar navbar-expand-md">
+                    <span class="navbar-brand mb-0 h2">Armings Quest</span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="bi bi-arrows-expand" style="color: aliceblue;"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Characters
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="bell.html">Bell</a>
+                                    <a class="dropdown-item" href="corlan.html">Corlan</a>
+                                    <a class="dropdown-item active" href="#">Sun</a>
+                                    <a class="dropdown-item" href="subao.html">Subao</a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <!--  Popover code from https://getbootstrap.com/docs/4.6/components/popovers/ -->
+                                    <!-- This stuff is coming later. -->
+                                    <span class="d-block" data-toggle="popover" data-trigger="hover"
+                                        data-content="Coming Soon!">
+                                        <a class="dropdown-item disabled" href="#">Allies of the Fellowship</a>
+                                    </span>
+                                    <span class="d-block" data-toggle="popover" data-trigger="hover"
+                                        data-content="Coming Soon!"><a class="dropdown-item disabled" href="#">Other</a>
+                                    </span>
+                                    <!-- The above stuff is coming soon! -->
+                                </div>
+                            </div>
+                            <!-- History coming soon! -->
+                            <span class="d-block" data-toggle="popover" data-trigger="hover"
+                                data-content="Coming Soon!"><a class="nav-link active" href="history.html">History <span
+                                    class="sr-only">(current)</span></a>
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar end. -->
+
+    </header>
+
+    <section class="container-fluid" id="main-section">
+
+        <!-- These are the character icons! -->
+        <div class="row charnav">
+            <div class="col-md-5">
+            </div>
+            <div class="col-4 col-md-2 charnav-icon" id="syn-icon">
+                <div class="text-center">
+                    <a href="bell.html"><img src="assets/images/bell_bust.png" class="rounded-circle" height="100"
+                            width="100" alt="Bell (nee Syn'Agonafree)"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 charnav-icon" id="corlan-icon">
+                <div class="text-center">
+                    <a href="corlan.html"><img src="assets/images/corlan_bust.png" class="rounded-circle" height="100"
+                            width="100" alt="Corlan Falster"></a>
+                </div>
+            </div>
+            <div class="col-4 col-md-2 charnav-icon" id="bao-icon">
+                <div class="text-center">
+                    <a href="subao.html"><img src="assets/images/subao_bust.png" class="rounded-circle" height="100"
+                            width="100" alt="Subao"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Character icons end. -->
+
+        <div class="row">
+
+            <!-- This is for the timeline. -->
+            <div class="col-12 col-sm-4 timeline">
+            </div>
+
+            <!-- This is for the main history text. -->
+            <div class="col-md-8 history-space" id="history-space">
+
+                <!-- Name and Title -->
+                <div class="row bio-header">
+                    <div class="col-12">
+                        <h2>Sun Mullnir</h2>
+                        <h6>Mog-Ur of Armings</h6>
+                        <h6 class="small"><a href="sunmoretest.html#bio-space">swap display</a></h6>
+                    </div>
+                </div>
+                <!-- Name and title end. -->
+
+                <!-- Main bio text -->
+                <div class="row bio-info">
+                    <div class="col-12">
+                        <p>ANCESTRY: Unbreakable Goblin</p>
+                        <p>BACKGROUND: Feral Child</p>
+                        <p>CLASS: Barbarian (Druid Dedication)</p>
+                        <p>SPECIALTY: Mundane healing, Damage (sometimes), Crowd Control</p>
+                        <p>A simple drummer and chef with a big heart. Very protective of her own. Somehow she ended up
+                            as the successor to the Mog-Ur, a spiritual leader of sorts for Armings.
+                        </p>
+                    </div>
+                </div>
+                <!-- Bio text end. -->
+
+                <!-- Stat bars -->
+                <div class="row bio-stats">
+                    <div class="col">
+                        <!-- Each 'progress' class div contains all the info for one bar; copypaste them to create new bars. -->
+                        <!-- Progress bar code copied from/created with Bootstrap documentation and heavily edited for my needs. https://getbootstrap.com/docs/4.6/components/progress/ -->
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="21" aria-valuemin="0"
+                                aria-valuemax="21" style="width:100%;">
+                                <span class="d-none d-sm-inline">21</span>
+                                <span class="sr-only">Superhuman</span>
+                            </div>
+                            <span class="stat-type">Strength</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="16" aria-valuemin="0"
+                                aria-valuemax="21" style="width:76.19%;">
+                                <span class="d-none d-sm-inline">16</span>
+                                <span class="sr-only">Great</span>
+                            </div>
+                            <span class="stat-type">Dexterity</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="19"
+                                aria-valuemin="0" aria-valuemax="21" style="width:90.476%;">
+                                <span class="d-none d-sm-inline">19</span>
+                                <span class="sr-only">Amazing</span>
+                            </div>
+                            <span class="stat-type">Constitution</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="8" aria-valuemin="0"
+                                aria-valuemax="21" style="width:38.095%;">
+                                <span class="d-none d-lg-inline">8</span>
+                                <span class="sr-only">Below Average</span>
+                            </div>
+                            <span class="stat-type">Intelligence</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="18" aria-valuemin="0"
+                                aria-valuemax="21" style="width:85.714%;">
+                                <span class="d-none d-sm-inline">18</span>
+                                <span class="sr-only">Amazing</span>
+                            </div>
+                            <span class="stat-type">Wisdom</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="14" aria-valuemin="0"
+                                aria-valuemax="21" style="width:66.7%;">
+                                <span class="d-none d-sm-inline">14</span>
+                                <span class="sr-only">Good</span>
+                            </div>
+                            <span class="stat-type">Charisma</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="21" aria-valuemin="0"
+                                aria-valuemax="21" style="width:100%;">
+                                <span class="sr-only">Max</span>
+                            </div>
+                            <span class="stat-type">Cooking & Bongos</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Stat bars end. -->
+
+            </div>
+            <!-- Bio end. -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid fixed-bottom">
+        <div class="row">
+            <div class="col-12">
+                <div class="float-right">Copyright Gabriel Eboreime 2022 - 2022</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end. -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!-- Copied from the popover documentation on Bootstrap. https://getbootstrap.com/docs/4.6/components/popovers/ -->
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+
+</html>
