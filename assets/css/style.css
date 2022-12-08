@@ -162,7 +162,8 @@ footer {
 
 /* Bio Space */
 
-.bio-space {
+.bio-space,
+.history-space {
     padding: 2rem;
     margin-bottom: 1rem;
 }
@@ -216,6 +217,63 @@ footer {
 #main-section {
     padding-top: 55px;
 }
+
+/* Timeline 
+ - All the following code was copied from UCD-resume from mini-project of Code Institute and edited for my needs. */
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.history-heading, .section-heading {
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #b22222;
+}
+
+.history-items {
+    margin-bottom: 30px;
+}
+
+/* End of copied code for timeline stuff. */
 
 /*  Responsive design for variable screens */
 
